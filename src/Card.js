@@ -12,5 +12,4 @@ const Card = ({ id, name, email }) => {
     );
 }
 
-
 export default Card;
