@@ -38,4 +38,26 @@ Life Cycle Methods (Life Cycle Hooks)
 Inline Styles 
     In JSX, to use style attribute, it must be in double {{}}
     ex. <div style={{}}></div> so it can accept and object of css Styles
-    
+
+NPM React Scripts
+- npm run build
+    - will create a build folder (for deployment) which contains minified/compiled
+     styles, scripts, etc. (made by webpack) for better perfomance
+
+    example build notes after successful build
+       
+        The project was built assuming it is hosted at the server root.
+        You can control this with the homepage field in your package.json.
+        For example, add this to build it for GitHub Pages:
+
+        "homepage" : "http://myname.github.io/myapp",
+
+        The build folder is ready to be deployed.
+        You may serve it with a static server:
+
+        npm install -g serve
+        serve -s build
+
+        Find out more about deployment here:
+
+        https://bit.ly/CRA-deploy
