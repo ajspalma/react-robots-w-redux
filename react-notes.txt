@@ -14,3 +14,9 @@ STATE
     - simply means, the description of an app
     - simple and object, object that describes an application
     - able to change
+    - something that can change and affect our app and usually lives in the 
+        parent components, wherein it passes that state(props) to different 
+        components
+    - use this.setState() to change a state property
+        ex. this.setState({ searchField: event.target.value });
+    
