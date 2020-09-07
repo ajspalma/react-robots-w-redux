@@ -20,6 +20,9 @@ STATE
     - use this.setState() to change a state property
         ex. this.setState({ searchField: event.target.value });
 
+CHILDREN - Every props has children, this can be used to get what is wrapped
+    inside the other component (ex Scoll Component)
+
 Life Cycle Methods (Life Cycle Hooks)
     - https://reactjs.org/docs/react-component.html
         - Mounting
@@ -30,3 +33,9 @@ Life Cycle Methods (Life Cycle Hooks)
         - Updating
         - Unmounting
     - https://reactjs.org/docs/state-and-lifecycle.html 
+
+
+Inline Styles 
+    In JSX, to use style attribute, it must be in double {{}}
+    ex. <div style={{}}></div> so it can accept and object of css Styles
+    
