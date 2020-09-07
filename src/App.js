@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import SearchBox from './SearchBox';
 import CardList from './CardList';
-import { robots } from './robots';
 import './App.css'; 
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      robots: robots,
+      robots: [],
       searchField: '',
     }
   }
@@ -28,6 +27,12 @@ class App extends Component {
         <CardList robots={ filteredRobots } />
       </div>
     );
+  }
+
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(users => this.setState({robots: users}));
   }
 }
 

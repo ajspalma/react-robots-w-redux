@@ -19,4 +19,14 @@ STATE
         components
     - use this.setState() to change a state property
         ex. this.setState({ searchField: event.target.value });
-    
+
+Life Cycle Methods (Life Cycle Hooks)
+    - https://reactjs.org/docs/react-component.html
+        - Mounting
+            - constructor() 
+            - componentWillMount() - before render
+            - render()
+            - componentDidMount() - after render
+        - Updating
+        - Unmounting
+    - https://reactjs.org/docs/state-and-lifecycle.html 
