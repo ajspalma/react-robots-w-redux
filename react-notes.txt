@@ -1,0 +1,16 @@
+One way data flow
+
+Pure functions (Deterministic) - receives an input and always return an (same) output
+
+React Components are called pure components, others say it is dumb component
+
+STATE >> props
+
+PROPS 
+    - props are something we get and unable to modify
+    - unable to change
+
+STATE 
+    - simply means, the description of an app
+    - simple and object, object that describes an application
+    - able to change
