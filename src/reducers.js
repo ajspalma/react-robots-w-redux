@@ -1,14 +1,19 @@
-import { CHANGE_SEARCH_FIELD } from './constants';
+import { 
+    CHANGE_SEARCH_FIELD,
+    REQUEST_ROBOTS_PENDING,
+    REQUEST_ROBOTS_SUCCESS,
+    REQUEST_ROBOTS_FAILED
+} from './constants';
 
 // Starting point
-const initialState = {
+const initialStateSearch = {
     searchField: ''
 }
 
 // Reducer
 // Gets an input of state then add action
 // action -> comes in the actions.js
-export const searchRobots = (state = initialState, action = {}) => {
+export const searchRobots = (state = initialStateSearch, action = {}) => {
     switch (action.type) {
         case CHANGE_SEARCH_FIELD:
             // return new state, and update a property
@@ -18,5 +23,32 @@ export const searchRobots = (state = initialState, action = {}) => {
             });
         default: 
             return state;
+    }
+}
+
+const initialStateRobots = {
+    isPending: false,
+    robots: [],
+    error: ''     
+};
+
+export const requestRobots = (state = initialStateRobots, action = {}) => {
+    switch (action.type) {
+        case REQUEST_ROBOTS_PENDING:
+            return Object.assign({}, state, { isPending: true });
+        case REQUEST_ROBOTS_SUCCESS: 
+            return Object.assign({}, state, { 
+                robots: action.payload,
+                isPending: false
+            });
+        case REQUEST_ROBOTS_FAILED:
+            return Object.assign({}, state, { 
+                error: action.payload, 
+                isPending: false
+            });
+        // Always return default state when it doesn't match any criteria
+        default: 
+            return state;
+
     }
 }
