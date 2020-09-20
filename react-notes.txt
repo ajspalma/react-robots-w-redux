@@ -127,3 +127,15 @@ Redux Saga
 Immutable JS 
     https://immutable-js.github.io/immutable-js/
 
+
+Reference: Lesson 62
+Module Bundlers
+- Parcel 
+    - Personal Projects
+    - https://parceljs.org/ 
+- Webpack 
+    - For Big Projects
+    - https://webpack.js.org/ 
+- Rollup.js
+    - When rolling up own npm packages
+    - https://rollupjs.org/guide/en/
