@@ -79,3 +79,51 @@ is by using Higher Order function, meaning it is invoked/called
 then return another function then the function get called too.
 example: 
 export default conect()(App);
+
+
+Reference: Lesson 61
+
+Since React is for View only, here are some tools that can be used and added on top of react
+
+Libraries: 
+- React Router (changing pages, changing routes)
+    https://reactrouter.com/
+    
+Utility Librarys (Added functions to JavaScript)
+- Ramda 
+    - if you want to keep functional programming ideology
+    https://ramdajs.com/ 
+- Lodash 
+    - Extra tools that can be used in JS
+    https://lodash.com/ 
+
+For Styling 
+- Glamorous (Maintainable CSS with React)
+    https://glamorous.rocks/
+- Styled Components 
+    https://styled-components.com/ 
+- CSS Modules
+    https://github.com/css-modules/css-modules
+
+
+Gatsby.js (For Static Websites in React)
+    https://www.gatsbyjs.com/
+
+Next.js (for server-side rendered apps)
+    https://nextjs.org/
+
+Material UI (components for react, ready to copy)
+    https://material-ui.com/
+
+React Semantic UI (component for react, ready to copy)
+    https://react.semantic-ui.com/ 
+
+Reselect (Usually partnered with Redux. Selector)
+    https://github.com/reduxjs/reselect
+
+Redux Saga
+    https://redux-saga.js.org/
+
+Immutable JS 
+    https://immutable-js.github.io/immutable-js/
+
