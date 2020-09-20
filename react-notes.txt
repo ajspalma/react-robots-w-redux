@@ -73,3 +73,9 @@ REDUX
 - Installed redux package
 - And, in order to connect redux just like react using ReactDOM package
     to connect with the DOM, install react-redux package
+
+Syntax of using connect in a Smart Component (container)
+is by using Higher Order function, meaning it is invoked/called
+then return another function then the function get called too.
+example: 
+export default conect()(App);
