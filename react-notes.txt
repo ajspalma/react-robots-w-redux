@@ -67,3 +67,9 @@ Error Boundary
 - Note: error will still be deisplayed in development mode, but will be hidden when 
 build is in production
 - componentDidCatch - new lifecycle hook
+
+REDUX
+- State Management
+- Installed redux package
+- And, in order to connect redux just like react using ReactDOM package
+    to connect with the DOM, install react-redux package
